@@ -3,53 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROFI CUT FRISEUR</title>
+    <title>PROFI CUT Friseur | Kleve</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 { color: #333; }
-        .info-block { margin: 20px 0; border-top: 1px solid #eee; padding-top: 10px; }
-        .hours-list { list-style: none; padding: 0; display: inline-block; text-align: left; }
-        .hours-list li { margin-bottom: 5px; }
+        :root { --gold: #d4af37; --black: #1a1a1a; --dark-grey: #2d2d2d; --white: #ffffff; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--black); color: var(--white); margin: 0; padding: 0; line-height: 1.6; }
+        header { background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80'); background-size: cover; padding: 60px 20px; text-align: center; border-bottom: 3px solid var(--gold); }
+        .logo { font-size: 3rem; font-weight: bold; letter-spacing: 2px; color: var(--gold); margin: 0; text-transform: uppercase; }
+        .tagline { font-size: 1.2rem; color: #ccc; margin-top: 10px; }
+        .container { max-width: 800px; margin: auto; padding: 20px; }
+        .btn-group { display: flex; gap: 10px; justify-content: center; margin: 30px 0; }
+        .btn { padding: 15px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; flex: 1; text-align: center; }
+        .btn-gold { background-color: var(--gold); color: black; }
+        .btn-outline { border: 2px solid var(--gold); color: var(--gold); }
+        .section { background: var(--dark-grey); padding: 25px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        h2 { color: var(--gold); border-bottom: 1px solid #444; padding-bottom: 10px; margin-top: 0; }
+        .price-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed #444; }
+        .review { font-style: italic; border-left: 3px solid var(--gold); padding-left: 15px; margin-bottom: 20px; }
+        .stars { color: var(--gold); margin-bottom: 5px; }
+        footer { text-align: center; padding: 40px 20px; color: #777; font-size: 0.9rem; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>PROFI CUT FRISEUR</h1>
-        <p>Ihr professioneller Barbershop in Kleve</p>
 
-        <div class="info-block">
-            <h3>📍 Adresse</h3>
-            <p>Hagsche Str. 38<br>47533 Kleve</p>
-            <p>📞 <strong>Telefon:</strong> 01590 1415017</p>
+<header>
+    <p class="logo">PROFI CUT</p>
+    <p class="tagline">Ihr professioneller Barbershop in Kleve</p>
+</header>
+
+<div class="container">
+    <div class="btn-group">
+        <a href="tel:015901415017" class="btn btn-gold"><i class="fas fa-phone"></i> Anrufen</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Hagsche+Str.+38+47533+Kleve" class="btn btn-outline"><i class="fas fa-location-arrow"></i> Route</a>
+    </div>
+
+    <div class="section">
+        <h2><i class="fas fa-cut"></i> Preise (Herren)</h2>
+        <div class="price-row"><span>Haarschnitt (Trocken/Styling)</span> <span>15,00€</span></div>
+        <div class="price-row"><span>Waschen, Schneiden, Föhnen</span> <span>18,00€</span></div>
+        <div class="price-row"><span>Maschinenhaarschnitt</span> <span>10,00€</span></div>
+        <div class="price-row"><span>Bart Rasieren</span> <span>10,00€</span></div>
+        <div class="price-row"><span>Konturen</span> <span>5,00€</span></div>
+        <div class="price-row"><span>Augenbrauen zupfen (Faden)</span> <span>7,00€</span></div>
+    </div>
+
+    <div class="section">
+        <h2><i class="fas fa-clock"></i> Öffnungszeiten</h2>
+        <div class="price-row"><span>Montag - Freitag</span> <span>08:30 – 19:00 Uhr</span></div>
+        <div class="price-row"><span>Samstag</span> <span>08:30 – 18:00 Uhr</span></div>
+        <div class="price-row"><span>Sonntag</span> <span>Geschlossen</span></div>
+    </div>
+
+    <div class="section">
+        <h2><i class="fas fa-star"></i> Kundenstimmen</h2>
+        <div class="review">
+            <div class="stars">★★★★★</div>
+            "One of the best hair saloon in Kleve. They took so much care to make a perfect hair style for my face..."
+            <br><strong>- Sanjeevan T.</strong>
         </div>
-
-        <div class="info-block">
-            <h3>⏰ Öffnungszeiten</h3>
-            <ul class="hours-list">
-                <li><strong>Montag:</strong> 08:30 – 19:00 Uhr</li>
-                <li><strong>Dienstag:</strong> 08:30 – 19:00 Uhr</li>
-                <li><strong>Mittwoch:</strong> 08:30 – 19:00 Uhr</li>
-                <li><strong>Donnerstag:</strong> 08:30 – 19:00 Uhr</li>
-                <li><strong>Freitag:</strong> 08:30 – 19:00 Uhr</li>
-                <li><strong>Samstag:</strong> 08:30 – 19:00 Uhr</li>
-                <li><strong>Sonntag:</strong> Geschlossen</li>
-            </ul>
+        <div class="review">
+            <div class="stars">★★★★★</div>
+            "New shop but all are professional with good experience. Very welcoming."
+            <br><strong>- Google Review</strong>
+        </div>
+        <div class="review">
+            <div class="stars">★★★★★</div>
+            "A good place to have a haircut, very friendly for students."
+            <br><strong>- Abhijit RG</strong>
         </div>
     </div>
-</body> 
+
+    <div class="section">
+        <h2><i class="fas fa-map-marker-alt"></i> Standort</h2>
+        <p>Hagsche Str. 38<br>47533 Kleve</p>
+        <p><i class="fas fa-phone"></i> 01590 1415017</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 PROFI CUT Friseur Kleve. Alle Rechte vorbehalten.
+</footer>
+
+</body>
 </html>
