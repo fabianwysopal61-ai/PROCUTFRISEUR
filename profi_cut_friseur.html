@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PROFI CUT FRISEUR</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0a0a0a;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: black;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: gold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.hero {
+    height: 400px;
+    background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.footer {
+    background: black;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div><b>PROFI CUT</b></div>
+    <div>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#zeiten">Öffnungszeiten</a>
+        <a href="#kontakt">Kontakt</a>
+    </div>
+</nav>
+
+<div class="hero">
+    PROFI CUT FRISEUR 💇‍♂️
+    <a class="btn" href="tel:015901415017">Termin buchen</a>
+</div>
+
+<div class="section" id="leistungen">
+    <h2>Leistungen & Preise</h2>
+    <div class="cards">
+        <div class="card">Haarschnitt – ab 15€</div>
+        <div class="card">Waschen & Styling – ab 20€</div>
+        <div class="card">Färben – ab 40€</div>
+        <div class="card">Bartpflege – ab 10€</div>
+    </div>
+</div>
+
+<div class="section" id="zeiten">
+    <h2>Öffnungszeiten</h2>
+    <p>Mo–Fr: 09:00 – 18:00</p>
+    <p>Sa: 09:00 – 16:00</p>
+    <p>So: Geschlossen</p>
+</div>
+
+<div class="section gallery">
+    <h2>Galerie</h2>
+    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e">
+    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1">
+</div>
+
+<div class="section" id="kontakt">
+    <h2>Kontakt</h2>
+    <p>📍 Hagsche Str. 38, 47533 Kleve</p>
+    <p>📞 01590 1415017</p>
+
+    <iframe 
+    src="https://maps.google.com/maps?q=Hagsche%20Str%2038%20Kleve&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    width="90%" height="300" style="border:0;">
+    </iframe>
+</div>
+
+<div class="footer">
+    © 2026 PROFI CUT FRISEUR
+</div>
+
+</body>
+</html>
